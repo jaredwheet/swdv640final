@@ -1,0 +1,103 @@
+body h1,
+body h2,
+body h3 {
+  color: #9a0dde;
+}
+body a.btn {
+  background-color: #f4bc48;
+}
+body a.btn:hover {
+  background-color: #13f1a9;
+  color: #A70EF1;
+}
+body .btn-info {
+  background-color: #f4bc48;
+}
+body .btn-info:hover {
+  background-color: #13f1a9;
+  color: #A70EF1;
+}
+body #mainNavigation {
+  background-color: #F1A70E;
+}
+body #mainNavigation .navbar-brand {
+  background-color: #d9960d;
+  padding: 5px;
+  font-weight: bold;
+}
+body #mainNavigation .navbar-brand:hover {
+  outline: 1px solid #f4b93e;
+}
+body #mainNavigation a.nav-link {
+  color: #000000;
+}
+body #mainNavigation a.nav-link:hover {
+  color: #A70EF1;
+}
+body #mainNavigation a.btn:hover {
+  background-color: #f3b535;
+  color: #A70EF1;
+}
+body .jumbotron {
+  background-image: url("images/fitnesslogo.jpg");
+}
+body .jumbotron .container {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 1em;
+  color: #fff;
+}
+body .jumbotron .container h1.display-3 {
+  color: #fff;
+}
+body ul#render_sideLinks li {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 7px auto;
+  width: 100%;
+  overflow: hidden;
+}
+body ul#render_sideLinks li a {
+  color: #A70EF1;
+}
+body ul#render_sideLinks li a:hover {
+  color: #e9629b;
+}
+body ul#render_sideLinks li a img {
+  margin-left: 5px;
+}
+body ul#render_sideLinks li a span {
+  margin-left: 12px;
+}
+body img {
+  height: 50px;
+  width: 50px;
+}
+body footer {
+  text-align: center;
+}
+.btn-common {
+  background-color: #f4bc48;
+}
+.btn-common:hover {
+  background-color: #13f1a9;
+  color: #A70EF1;
+}
+.forgot-pw {
+  background-color: #48f4bc;
+  color: #F1A70E;
+  font-weight: bold;
+}
+.forgot-pw:hover {
+  background-color: #f1a913;
+  color: #A70EF1;
+}
+.register-btn {
+  background-color: #f4bc48;
+  color: #A70EF1;
+  font-weight: bold;
+}
+.register-btn:hover {
+  background-color: #13f1a9;
+  color: #A70EF1;
+}

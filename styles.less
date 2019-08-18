@@ -1,0 +1,139 @@
+// Theme Variables
+@primary: #F1A70E;
+@secondary: #0EF1A7;
+@thirdcolor: #A70EF1;
+@border-radius:5px;
+
+body{
+	h1, h2, h3{
+		color:darken(@thirdcolor, 4%);
+	}
+	
+	a.btn{
+		background-color:lighten(@primary, 12%);
+		
+		&:hover{
+			background-color:lighten(@secondary, 1%);
+			color: @thirdcolor;
+		}
+	}
+
+	.btn-info {
+		background-color:lighten(@primary, 12%);
+		
+		&:hover{
+			background-color:lighten(@secondary, 1%);
+			color: @thirdcolor;
+		}
+	}
+	
+	#mainNavigation{
+		background-color:@primary;
+		
+		.navbar-brand{
+			background-color:darken(@primary, 5%);
+			padding: 5px;
+			font-weight: bold;
+			
+			&:hover{
+				outline:1px solid lighten(@primary, 10%);
+				
+			}
+		}
+		
+		a.nav-link{
+			color:rgb(0, 0, 0);
+			
+			&:hover{
+				color: @thirdcolor;
+			}
+		}
+		
+		a.btn{
+			&:hover{
+				background-color:lighten(@primary, 8%);
+				color: @thirdcolor;
+				
+			}
+		}
+	}
+
+	.jumbotron{
+		background-image:url("./images/fitnesslogo.jpg");
+		
+		.container{
+			background: rgba(0, 0, 0, 0.8);
+			border-radius:@border-radius;
+			padding:1em;
+			color:#fff;
+			
+			h1.display-3{
+				color:#fff;
+			}
+		}	
+	}
+	
+	ul#render_sideLinks{
+		li{
+			border: 1px solid #ddd;
+			border-radius: @border-radius;
+			margin: 7px auto;
+			width: 100%;
+			overflow: hidden;
+
+			a{
+				color:@thirdcolor;
+				
+				&:hover{
+					color:lighten(#E01F70, 15%);
+				}
+				
+				img{
+					margin-left:5px;
+				}
+				span{
+					margin-left:12px;
+				}
+			} 
+		}
+	}
+
+	img {
+		height: 50px;
+		width: 50px;
+	}
+	
+	footer{
+		text-align:center;
+	}
+}
+.btn-common {
+	background-color:lighten(@primary, 12%);
+	
+	&:hover{
+		background-color:lighten(@secondary, 1%);
+		color: @thirdcolor;
+	}
+}
+
+.forgot-pw {
+	background-color:lighten(@secondary, 12%);
+	color: @primary;
+	font-weight: bold;
+	
+	&:hover{
+		background-color:lighten(@primary, 1%);
+		color: @thirdcolor;
+	}
+}
+
+.register-btn {
+	background-color:lighten(@primary, 12%);
+	color: @thirdcolor;
+	font-weight: bold;
+	
+	&:hover{
+		background-color:lighten(@secondary, 1%);
+		color: @thirdcolor;
+	}
+}

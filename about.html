@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>BrightenUp Fitness</title>
+    <meta charset="utf-8">
+    <!-- Reference Bootstrap grid classes -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Less stylesheet -->
+    <link href="./styles.css" type="text/css" rel="stylesheet" />
+        <!-- Reference jQuery Library -->
+    <script type="text/javascript" src="./jquery-3.3.1-1.min.js"></script>
+    <!-- Reference Bootstrap JavaScript File -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Mustache.js Reference -->
+    <script type="text/javascript" src="./mustache-1.js"></script>
+    <!-- Script containing our data wrapped in a document.ready function -->
+    <script type="text/javascript" src="./data-1.js"></script>
+</head>
+
+<body>
+    <!-- Define main content areas in the site that receives information from data.js. First script is used for the top navigation and the second for the side navigation -->
+    <script id="topNavigation" type="x-tmpl-mustache">
+				{{#item}}
+					<li class="nav-item">
+						<a class="nav-link" href="{{link}}">{{name}}</a>
+					</li>
+				{{/item}}
+	</script>
+
+    <script id="sideNavigation" type="x-tmpl-mustache">
+				{{#item}}
+					<li class="nav-item">
+						<a class="nav-link" href="{{link}}"><img src="{{image}}" alt="{{altTag}}"><span>{{name}}</span></a>
+					</li>
+				{{/item}}
+	</script>
+
+  <!-- Responsive top navigation bar -->
+    <nav id="mainNavigation" class="navbar navbar-expand-md navbar-dark fixed-top">
+
+        <a class="navbar-brand" href="index.html">BrightenUp Fitness</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+            <!-- Mustache renders the top navigation links in the below unordered list -->
+            <ul class="navbar-nav mr-auto" id="render_topLinks"></ul>
+
+            <a class="btn btn-primary btn-lg" href="firstclassfree.html" role="button">First Class Free! </a>
+            <a class="btn btn-primary btn-lg" href="login.html" role="button">Login </a>
+        </div>
+    </nav>
+
+    <main role="main">
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">About BrightenUp Fitness</h1>
+                <p>Our mission is simple: We are here to Brighten your life. We empower you to be your best self. Let us be a part of your journey.  </p>
+                
+            </div>
+        </div>
+
+        <div class="card text-center">            
+            <div class="card-body">
+              <h5 class="card-title">We are here to Brighten your life.</h5>
+              <p class="card-text">BrightenUp Fitness was started by the husband and wife team
+                  of Tiffany and Jared.  They saw that most fitness facilities focus on perfect bodies
+                  and intimidate a lot of people from ever getting started.  They think everyone is capable
+                  of bettering themselves and want to be a part of that journey.  Reach out today
+                  and schedule a consultation to see how we can help BrightenUp your life!
+              </p>
+              <a href="#" class="btn btn-primary">BrightenUp today!</a>
+            
+          </div>
+        <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+        <!-- We are using jQuery to populate the current year below -->
+        <p>&copy; BrightenUp Fitness Inc.
+            <span id="currentYear"></span>
+        </p>
+    </footer>
+
+</body>
+
+</html>
